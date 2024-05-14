@@ -1,0 +1,168 @@
+<style>
+body {
+    background: rgba(232, 232, 223, 0.5);
+  }
+  #header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+  .header-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .header-img {
+    position: fixed;
+    height: 31%;
+    object-fit: cover;
+    top: 0;
+  }
+  .page-title {
+    position: fixed;
+    font-family: Copperplate ;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+    background: rgba(255, 219, 36, 0.9);
+    border-radius: 65px;
+    padding: 35px;
+    top: 4%;
+    margin: 3%;
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    height: 25px;
+    background: rgba(255, 219, 36, 0.7);
+    width: 100%;
+  }
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 90%;
+    padding: 3px;
+  }
+  .navbar a:hover {
+    color: blue;
+  }
+  #main {
+  margin-top: 220px;
+  }
+  .section-headers {
+    text-align: center;
+    font-family: Times New Roman;
+    font-size: 35px;
+    color: white;
+    text-shadow: 2px 2px 3px yellow;
+    margin: 30px;
+    padding: 10px;
+    background: rgba(174, 172, 162, 0.5);
+  }
+  section:first-of-type {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  p, li {
+    margin: 0 30px 0 30px;
+    font-family: Arial;
+  }
+  li {
+    margin-bottom: 30px;
+  }
+  li:last-of-type {
+    margin-bottom: 40px;
+  }
+  iframe {
+    width: 80%;
+    height: 60%;
+    margin: 5% 10%;
+    }
+  form {
+    background: rgba(174, 172, 162, 0.5);
+    display: flex;
+    border-style: outset;
+    border-color: rgba(255, 219, 36, 0.8);
+    flex-direction: column;
+    width: 80%;
+    margin: 5% 10%;
+    padding: 10px;
+  }
+  input {
+    margin: 10px;
+    height: 30px;
+  }
+  @media (max-width: 700px) {
+    .navbar {
+      top: 0px;
+      width: 100%;
+      padding: 1px;
+    }
+    .navbar a {
+      font-size: 80%;
+      padding: 3px;
+    }
+    .page-title {
+      margin-top: 25px;
+      padding: 6%;
+    }
+    .section-headers {
+      font-size: 30px;
+    }
+  }
+  @media (min-width: 1150px) {
+    .page-title {
+      top: 1.5%;
+    }
+  }
+  </style>
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta charset="UTF-8"></meta>
+  <title>Product Landing Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="17 Product Landing Page styles.css">
+</head>
+
+<body>
+
+<header id="header">
+  <div class="header-container">
+    <img class="header-img" id="header-img" src="https://images-production.bookshop.org/spree/affiliate_profiles/banner_images/9028/original/Twitter-Header-Image-1500x500.jpg?1591817988" style="width:100%" alt="study-desk">
+    <div class="page-title">Revisão de Todas as Horas</div>
+    <div class="navbar">
+ <nav id="nav-bar">
+   <a class="nav-link" accesskey="a" href="#A_PLATAFORMA">A PLATAFORMA</a>
+    <a class="nav-link" accesskey="a" href="#COMO_FUNCIONA">COMO FUNCIOINA</a>
+    <a class="nav-link" accesskey="a" href="#COMECE_A_REVISÃO">COMECE A REVISÃO</a>
+  </nav>
+  </div>
+  </div>
+</header>
+
+<main id="main">
+  <section id="A_PLATAFORMA">
+    <header class="section-headers">A PLATAFORMA</header>
+    <li>Aulas sobre disciplina e organização</li>
+    <li>Resumos de todas as matérias</li>
+    <li>Interativo e fácil de usar</li>
+  </section>
+  <section id="COMO_FUNCIONA">
+    <header class="section-headers">COMO FUNCIONA</header>
+    <p>Assista o tutorial para entender como acessar a plataforma.</p>
+   <iframe id="video" width="90%" height="40%" src="https://www.youtube.com/embed/aO1QNXxcXm0?si=0IcVB_d_8N_f-HkW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </section>
+  <section id="COMECE_A_REVISÃO">
+    <header class="section-headers">COMECE A REVISÃO</header>
+    <p>Preencha o formulário abaixo para ganhar acesso a plataforma!</p>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input id="email" name="email" placeholder="Tell us your email" type="email"></input>
+      <input id="submit" type="submit"></input>
+    </form>
+  </section>
+</main>
+</body>
+</html>
